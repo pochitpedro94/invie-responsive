@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invie - tus mejores guitarras!!</title>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat|Open+Sans" rel="stylesheet"> <!--cdn-->
+	<link rel="stylesheet"  href="css/invie.css">
+	<!-- <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> <! las consultas se pueden hacer en otra hoja o misma hoja de estilo --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+	<section id="portadas" class="portada"><!-- portada --> 
+		<header id="headers" class="header contenedor"><!-- header -->
+			<figure class="logotipo"><!-- logotipo-->
+				<img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x"   width="186"  height="60" alt= "Invie logotipo" />
+				<!-- alt es la descripcion del logo o texto substitutivo, en  caso de que el logotipo no carge -->
+				<!-- srcset para imgagen retina -->
+			</figure>
+			<span class="icon-menu burguer-button" id="burguer-button"></span>
+			<nav class="menu" id="menu"><!--menu-->
+				<ul><!-- lista desordenada -->
+					<li><!-- lista de elementos, en este caso es un punto negro -->
+						<a href="index.html"><!--enlance-->home</a>
+					</li>
+				  <li>
+						<a href="#guitarras">guitarras</a><!--#sirve para invocar un id -->
+			    </li>
+		      <li>
+						<a href="precios.html">precios</a>
+			  	</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="contenedor"><!--esta etiqueta, solo sirve para hacer efectos visuales,es decir rompe la semantica del sitio web(margin widht)-->
+			<h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
+			<h3 class="title-a">sé la estrella de rock que siempre quisiste ser</h2><!-- resumen -->
+			<a class="boton" href="#guitarras">conoce mas</a><!-- boton -->
+		</div>
+	</section>
+
+	<section id = "guitarras" class="guitarras contenedor" ><!-- guitarras -->
+		<h2>Nuestras guitarras</h2><!-- titulo  -->
+		<div class="video-demo">
+		<div class="video-responsive-contenedor">
+			<iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+		</div>
+		</div>
+			
+		<!-- 	<video src=""></video> -->
+		<!-- <video src=""></video>	 -->
+		<article class="guitarra a"><!-- guitarra 1 -->
+			<img class="right" data-src= "images/invie-acustica.png|images/invie-acustica2x.png" width=" 350" alt="Guitarra Invie Acusttica" /> <!-- data-src : es la manera de invocar be lazy de js para optimizar nuestra imagen, | images/invie-acustica2x.png es la representación de una imagen retina en belazy -->
+			<div class="contenedor-guitarra-a">
+				<h3 class="title-b">Invie Acustica</h3>
+				<ol><!-- lista ordenada -->
+					<li>Estilo vintage</li>
+                	<li>madera pura </li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
+		</article>
+		<article class="guitarra b"><!-- guitarra 2 -->
+			<img class="left" data-src= "images/invie-classic.png|images/invie-classic2x.png" width="350"  alt="Guitarra Invie classic"/>
+			<div class="contenedor-guitarra-b">
+				<h3 class="title-b">Invie Classic</h3>
+				<ol><!-- lista ordenada -->
+					<li>Estilo vintage</li>
+					<li>Liviana </li>
+					<li>Inicia tu camino omo Rockstar</li>
+				</ol>
+			</div>
+		</article>
+	</section>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img data-src ="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco" class="logo">
+				<a  href="tel:+573123786480"><strong>Telefono</strong><span>3123786480</span></a> <!-- tel: nos permite que des una pagina nos puedan llamr -->
+				<a  href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+				<!--mailto: nos permite enviar un email al nuestro por parte de nuestro cliente-->
+			</div>
+
+			<form class="formulario">
+				<div class="col1">
+					<label for="nombre">Nombre</label><!--la etiqueta label es para dar un nombre un input y que este se seleccione y te lleve directamente al input-->
+					<input type="text" required id ="nombre" name="nombre" />
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" />
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" id="mujer" checked name="sexo" value="mujer" />Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre" />Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion">Cotización
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" name="intereses" id="reclamos" value="reclamos">Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" name="intereses" id="comentarios" value="comentarios">Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" name="intereses" id="otros" value="otros">Otros
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input class="boton" type="submit" value="Enviar" required="#" />
+				</div>
+			</form>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"> </script>
+	<script src="js/invie.js">
+		
+	</script>
+</body>
+</html>
+<!--atributos de input: text , value(para escribir dentro del type, que luego es seleccionable ), required (para requerir un texto), placeholder (es como un marcador de posición que nos permite escriber algo dentro del type y que es invisible, mas claro y no es seleccionable a diferencia del value).
+type(value,text, button, multiple(checkbox), radio)-->
+<!-- el atributo name sirve para conectar dos etiquetas y que solo podamos seleccionar una de las dos, en este caso utilizamos el name="sexo"-->
+
+<!-- <a href="/" target="_blank">The home page will open in another tab.</a>	 -->

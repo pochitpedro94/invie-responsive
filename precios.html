@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Precios de tus mejores guitarras!!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="css/invie.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat|Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+</head>
+<body class="precios">
+	<header id="headers" class="header background"><!-- header -->
+		<div class="contenedor">
+		<figure class="logotipo"><!-- logotipo-->
+			<img src="images/invie.png" width="186"  height="60" alt= "Invie logotipo" /><!-- alt es la descripcion del logo o texto substitutivo, en  caso de que el logotipo no carge -->
+		</figure> 
+			<span class="icon-menu burguer-button" id="burguer-button"></span>
+		<nav class="menu" id="menu"><!--menu-->
+			<ul><!-- lista desordenada -->
+				<li><!-- lista de elementos, en este caso es un punto negro -->
+					<a href="index.html"><!--enlance-->home</a>
+				</li>
+			    <li>      
+					<a href="index.html#guitarras">guitarras</a><!--#sirve para invocar un id -->
+		        </li>	
+	       	    <li>      
+					<a href="precios.html">precios</a>
+		        </li>		
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<section class="tabla">
+		<div class="contenedor">
+			<table> 
+				<thead><!-- thead encabezado de una tabla tbody cuerpo de una tabla -->
+					<tr><!--tr sirve para hacer filas de celdas-->
+						<th>Modelo</th><!--el th sirve para hacer celdas de encabezado-->
+						<th>Precio</th>
+						<th>Descripción</th>
+						<th>Modelo</th><!--el th sirve para hacer celdas de encabezado-->
+						<th>Precio</th>
+						<th>Descripción</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>invie classic</td><!--sirve para hacer celdas de de cuerpo-->
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+						<td>invie classic</td><!--sirve para hacer celdas de de cuerpo-->
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+					<tr>
+						<td>invie classic</td>
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+						<td>invie classic</td>
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+					<tr>
+						<td>invie classic</td>
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+						<td>invie classic</td>
+						<td>$10000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src ="images/invie-white.png" alt="logotipo blanco">
+				<a href="tel:+573123786480"><strong>Telefono</strong><span>3123786480</span></a> <!-- tel: nos permite que des una pagina nos puedan llamr -->
+				<a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+				<!--mailto: nos permite enviar un email al nuestro por parte de nuestro cliente-->
+			</div>
+			
+			<form class="formulario">
+				<div class="col1"> 
+					<label for="nombre">Nombre</label><!--la etiqueta label es para dar un nombre un input y que este se seleccione y te lleve directamente al input-->
+					<input type="text" required id ="nombre" name="nombre" />
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" />
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" id="mujer" checked name="sexo" value="mujer" />Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre" />Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion">Cotización
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" name="intereses" id="reclamos" value="reclamos">Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" name="intereses" id="comentarios" value="comentarios">Comentarios 
+						</label>
+						<label for="otros">
+							<input type="checkbox" name="intereses" id="otros" value="otros">Otros
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input class="boton 2" type="submit" value="Enviar"/>
+				</div>	
+			</form>
+		</div>
+	</footer>
+	<script src="js/invie.js">
+		
+	</script>
+</body>
+</html>

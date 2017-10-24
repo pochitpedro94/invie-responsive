@@ -1,0 +1,653 @@
+/**{border: 2px solid red;
+ }*/
+
+ 
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+table{
+	width: 100%;
+}
+
+th{
+	text-align: left;
+	background: #273b47;
+	color: white;
+	padding: 10px 20px ;
+}
+
+td{
+	padding: 20px;
+}
+
+table, td, th{
+	border:1px solid #273b47;
+	border-collapse: collapse;/*sirve para que los bordes de las tablas no sean dobles*/
+}
+
+input, textarea {
+	outline: 0;
+}
+
+.background{
+	background-image: url(../images/background.png);
+	background-size: cover;/*es para una imagen cubra totalmente en este caso la
+												 portada*/
+}
+.boton{
+	border-radius: 12px;
+	border:none;
+	background: #fd324e;
+	color: white;
+	padding:7px 12px;
+	cursor: pointer;/*sirve para en las partes clicables salga el guante*/
+	text-decoration: none;
+	font-size: 18px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+}
+
+.contenedor{
+	/*<!--contenedor es un atributo que sirve como una clase madre es decir, tenemos
+	varios class y con añadirles "contenedor" , todos conectaran simplemente invocando la clase
+	que hemos copiado en los otros atributos.-->*/
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+/*1header y portada-----------------------------------------------------------------------------*/
+.logotipo{
+ 	display:inline-block;
+	margin-left:0;
+
+ }
+
+.menu
+{
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+	color:white ;
+  right: 0;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+
+}/*display es la propiedad que nos permite cambiar la posicion del valor de cada etiqueta,
+ en este caso el valor es inline-block, que nos permite cambiar la posición. En este caso
+ cojemos el class <menu de de nav para que luego todo los li se posicionen de manera horizontal*/
+.menu li:before{/*este es un tipo de selector seudoelemento con before y after*/
+	content: "○";
+	font-size: 30px;
+	line-height: ;
+	color: white;
+}
+
+.menu a{
+	color:white;
+	text-decoration: none;
+}
+
+
+.header{
+	position:relative;
+}
+
+.portada{
+	background-image: url(../images/background.png);
+	background-size: cover;/*es para una imagen cubra totalmente en este caso la
+												 portada*/
+	background-color: #466173;
+	color:white;
+	padding:20px;
+	height: 500px;
+}
+
+.titulo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-bottom:0;
+	margin-top: 70px;
+}
+
+.titulo span{
+	text-decoration:underline;
+}
+
+.title-a{
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.boton{
+	margin-bottom: 70px;
+}
+/*................................................video............................................*/
+
+/*video{
+	width : 100%;
+}*/
+.video-responsive-contenedor {
+	position: relative;
+	padding-top: 56.4%;
+	/*margin-bottom: 10%;*/
+}
+
+.video-responsive-src{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-demo{
+	max-width: 500px;
+	
+	margin: 0 auto 80px ;
+	border: 5px solid #3c5b6e;
+
+}
+
+
+/*3section guitarras------------------------------------------------------------------*/
+
+.title-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.
+.guitarras h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+}
+
+.guitarras{
+	color: #1F313C;
+	margin-bottom: 60px;
+}
+
+.guitarra{
+	/*overflow:hidden;*/ /*<!-- nos permite que este mas cerca dentro del modelo caja -->*/
+	padding: 10px;
+	border: 1px solid #1F313C;
+	margin: 10px 10px 40px 10px;
+	border-radius: 8px 8px 8px 8px;
+	height: 212px;
+}
+
+.right{
+	float: right;
+	position:  relative; /*las otras position pueden ser "absolute, fixed,static"*/
+	bottom: 127px; /*la fijacion de la foto puede ser , bottom , right y left aparte de top
+*/
+
+}
+.left{
+	float: left;
+	position: relative;
+}
+
+.contenedor-guitarra-a{
+padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+	margin-left:  370px;
+	position: relative;
+	bottom: 90px;
+}
+
+.guitarra ol {
+	padding: 0;
+}
+
+
+/*footer-----------------------------------------------------------------------------*/
+.footer{
+	background: #273b47;
+	padding-left:50px 10px;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.contacto{
+	display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contacto img{
+	display: block;
+}
+
+
+
+.contacto strong{
+	display: block;
+}
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0px;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+	margin-top: 50px;
+}
+
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.col1{
+	margin-right: 15px;
+	
+}
+
+.col2{
+	align-items: stretch;
+}
+
+.col2 .boton{
+	margin-top: 15px;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 10px;
+}
+
+.sexo{
+	margin-top: 10px;
+	
+}
+
+
+
+.tabla{
+	margin: 50px 0;
+}
+
+
+
+
+
+
+
+/*.........................responsive design......................................*/
+/*A la hora de hacer un media querie es mas recomendado hacerlos internos a externos,
+debido a que no haria falta hacer otra oja de estilo.*/
+
+@media screen  and (max-width:800px){
+	/*PORTADA*/
+	.titulo{
+		font-size: 45px;
+		margin-top: 30px;
+	}
+	.title-a{
+		font-size: 18px;
+	}
+	.portada{
+		height: auto;
+	}
+	.portada .boton{
+		margin-bottom: 30px;
+		display: inline-block;/*este tipo display 
+		nos permite respetar el margin-bottom*/
+	}
+	/*PORTADA*/
+
+	/*GUITARRAS*/
+	.video-demo{
+		margin-bottom: 0;
+	}
+	.guitarras{
+		text-align: center;
+	}
+	.right, .left{
+		float: none;
+		position: static;
+	}
+	.title-b{
+		margin:0;
+	}
+	.guitarra{
+		height: auto;
+	}
+	.guitarra li{
+		list-style: none;
+	}
+
+	.guitarra .b{
+		height: auto;
+	}
+
+.contenedor-guitarra-b{
+	position: static;
+	margin: 0;
+}
+.contenedor-guitarra-a{
+	padding: 0;
+}
+
+footer{
+	
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+.logo-footer{
+	margin: 30px 20px 20px ;
+}
+.title-b{
+	font-size: 40px;
+}
+/*GUITARRAS*/
+
+
+	/*body{border: 10px red solid;
+
+	}*/
+	/*.contenedor{
+		width: auto;
+		max-width:800px;
+	}*/
+	/*.....................precrios.html........................................*/
+		.tabla{
+			margin :50px 20px;
+		}
+		.tabla .contenedor{
+			overflow: auto;
+			border : 1px solid #273b47;
+		}
+	/*.....................precrios.html........................................*/
+
+}
+/*@medria para invocar screen/ es el medio y and el operador que aconpaña para que se cumpla la condicion*/
+
+/*pantalla*/
+
+
+@media screen and (max-width: 767px){
+/* footer */
+ .footer .contenedor{
+ 	display: block;
+ }
+ .contacto {
+ 	margin:0 auto;
+ }
+ .formulario{
+ 	display: block;
+ 	margin:0 auto;
+ 	width: 300px;
+ }
+ .intereses label{
+ 	display: block;
+ 	font-size: 16px;
+ }
+ .col1{
+	margin: 0;
+ }
+	
+ input[type="text"], input[type="email"] {
+ 	font-size: 16px;
+ 	padding: 5px;
+
+}/*este es un tipo de selector para s
+ olo afectar a los atributos que nosotros queramos en un contenedor*/
+ input[type="radio"], input[type="checkbox"] /*para mozila es mejor utilizar transformaciones*/{
+ 	zoom:1.5;}
+textarea{
+	width: 100%;
+}
+
+/* footer */
+
+}
+
+/*........................media querie para móviles.........................*/
+@media screen and (max-width: 650px){
+	.header{
+		text-align: center;
+
+	}
+	.logotipo{
+		margin: 0;
+	}
+	.menu{
+		position: static;
+		display: block;
+	}
+
+	.menu li:first-child {
+		margin: 0;
+	}
+	.menu ul {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px){
+.precios .header .logotipo, .formulario .boton {
+	margin: 50px 0;
+}
+.portada .boton{
+	display: block;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fswiss');
+  src:  url('../fonts/icomoon.eot?fswiss#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fswiss') format('truetype'),
+    url('../fonts/icomoon.woff?fswiss') format('woff'),
+    url('../fonts/icomoon.svg?fswiss#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before 
+ { content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
+
+	/*portada*/
+	.burguer-button {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #395667;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	cursor: pointer;
+	color: white;
+	z-index: 3; /*ponemos este z index en tres ya que nos permitira aparecer el menu */
+}
+
+	.portada{
+		text-align: center;
+	}
+	.portada .contenedor{
+		position: static; /*nos permite que la portada ocupe todo los espacios para sobreponer un elemento*/
+	}
+	.header{
+		position: static;
+	}
+	.header .contenedor{
+		position: static;
+	}
+	.menu{
+		background:  rgba(255, 60, 88, .8); /*rgb es la fuente que utilizamos para dar color si añadimos 
+		a(alpha) volviendose rgba, podremos canbiar su opacidad de 0 a 100 o .5*/
+		position: fixed; /*es importante para que luego se pueda esconder el menu*/
+		
+		top: 0;
+		width: 100%;/*con declarar el ancho a continuacion podremos con left, esconder el 
+		menu de hamburguesa*/
+		left:-100%; /* con esta propiedad ponemos el menu a la izquierda y nos quedamos a la espera
+		de hacer un efecto para que salga]*/
+		
+		z-index:2; /*z-index es una propiedad que funciona con position absolute, fixed adn relative, 
+		nos permite sobreponer nuestro objeto encima para que sea mas visible*/
+		bottom: 0px;
+		right: 0;
+		display: flex;
+		align-items: center;
+		transition: .3s; /* 300ms*/
+	}
+	.menu.active{/*Luego con el js podremos activarlo para cque aparezcca el menu en la pantalla*/
+		left:0;
+	}
+	.menu ul{
+		flex: 1;/*nos permite ocupar todo el ancho del contenido, como margin: auto*/
+	}
+	.menu li{
+		display: block;
+		margin:0;
+		padding: 8px 0;
+		border-bottom:1px solid white; 
+	}
+	.menu li:first-child{
+		border-top: 1px solid white;
+	} 
+	.menu li:before {
+		display: none;
+	}
+	.titulo{
+		font-size: 30px;
+	}
+	.title-a{
+		font-size: 16px;
+	}
+	/*portada*/
+	
+
+
+	/*guitarras*/
+	.video-demo{
+		margin:20px 10px;
+	} 
+	.guitarras img{
+		width: 200px;
+		/*height: auto; se utilizaria height auto en caso de que nosotros le hayamos dado tambien un heigt
+		definido, para que se proporcione una imagen, en este caso no ya que solo definimos un width en
+		la imagen principal*/
+	}
+	.title-b{
+		font-size: 30px;
+	}
+	/*guitarras*/
+
+}
+
+
+
+
+
+
+
+
+
+/*como hacer un media para backgrounds definidos en css (motordel buscador-min-device-pixel-ratio:2)*/
+@media screen and (-webkit-min-device-pixel-ratio: 2 ){
+
+.portada{
+	background-image: url(../images/background2x.png);
+}}
+
+/*width: tamaño;
+  height: tamaño;
+   padding-top:10px;
+   padding-right:13px;
+   padding-bottom:5px;
+   padding-left:15px;
+   padding: 10px 13px 5px 15px ; este es el padding ordenado como las agujas del reloj
+   padding:10px;
+   ( unidad de medida | thin | medium | thick ) | inherit este es el ancho de los borders
+   none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset |
+   border-top-style: dashed;linea discontinua
+   border-right-style: double;
+   border-bottom-style: dotted;lineas puntuadas
+   border-left-style: solid;
+   border: 2px solid red;
+   margin-top: 10px;
+   margin-right:13px;
+   margin-bottom:5px;
+   margin-left:15px;
+   margin: 10px;*/
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Allerta', sans-serif;*/
+
+/* Display y sus propiedades
+1.display: flex y sus atributos;
+	display:flex; es un tipo de display que afecta a sus hijos
+  	justify-contend: ;justify-contend es una propiedad de display:flex para trabajar de manera horizontal
+    -flex-start(se alinean de la izquierda)
+    -flex-end(se alinéan desde la derecha)
+    -center
+    -space-around(para que hayga espacios entre los display a su alrededor)
+    -space-between(nos premite hacer espacios solo entre displays entre contenedores)
+2.Otras propiedades de display pero que van aparte, pero se complementa la una a la otra.Importante
+estas propiedades no funcionan si no esta creado display:flex;.
+-flex-wrap:wrap/nowrap;(flex-wrap es una propiedad que nos permite que el justy-contend quede lineal
+o no lineal)
+-flex direction:colum/row; (para poner los contenedores hijos por defecto en columnas o filas)
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+
+-align-items:center
+(flex-start: Items align to the top of the container.
+ flex-end: Items align to the bottom of the container.
+ center: Items align at the vertical center of the container.
+ baseline: Items display at the baseline of the container.
+ stretch: Items are stretched to fit the container.*/
