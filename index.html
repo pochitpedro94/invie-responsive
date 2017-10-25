@@ -3,10 +3,11 @@
 <head>
 	<title>Invie - tus mejores guitarras!!</title>
 	<meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat|Open+Sans" rel="stylesheet"> <!--cdn-->
-	<link rel="stylesheet"  href="css/invie.css">
-	<!-- <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> <! las consultas se pueden hacer en otra hoja o misma hoja de estilo --> 
+<!--      <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat|Open+Sans" rel="stylesheet"> <!cdn --> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<style>
+		body{font-family:'Allerta',sans-serif;margin:0}.boton{border-radius:12px;border:nne;backgroud:#fd324e;color:wite;padding:7px 12px;text-decoration:none;font-size:18px;background:linear-gradient(to left,#fe344e,#ff7250)}.contenedor{max-width:800px;margin:auto;position:relative}.logotipo{display:inline-block;margin-left:0}.menu{font-size:24px;display:inline-block;position:absolute;color:#fff;right:0}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:"○";font-size:30px;color:#fff}.menu a{color:#fff;text-decoration:none}.header{position:relative}.portada{background-image:url(./images/background.png);background-size:cover;background-color:#466173;color:#fff;padding:20px;height:500px}.titulo{font-family:'Montserrat',sans-serif;font-size:70px;margin-bottom:0;margin-top:70px}.titulo span{text-decoration:underline}.title-a{font-size:24px;margin-top:0}.boton{margin-bottom:70px}.video-responsive-contenedor{position:relative;padding-top:56.4%}.video-responsive-src{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}.video-demo{max-width:500px;margin:0 auto 80px;border:5px solid #3c5b6e}.guitarras{color:#1F313C;margin-bottom:60px}.right{float:right;position:relative;bottom:127px}@media screen and (max-width:800px){.titulo{font-size:45px;margin-top:30px}.title-a{font-size:18px}.portada{height:auto}.portada .boton{margin-bottom:30px;display:inline-block}.video-demo{margin-bottom:0}.guitarras{text-align:center}.right{float:none;position:static}}@media screen and (max-width: 650px){.header{text-align:center}.logotipo{margin:0}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}}@media screen and (max-width: 500px){.portada .boton{display:block}}@font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?fswiss);src:url(./fonts/icomoon.eot?fswiss#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?fswiss) format("truetype"),url(./fonts/icomoon.woff?fswiss) format("woff"),url(./fonts/icomoon.svg?fswiss#icomoon) format("svg");font-weight:400;font-style:normal}@media screen and (max-width: 500px){[class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}.burguer-button{width:40px;height:40px;line-height:40px;border-radius:50%;background:#395667;display:inline-block;text-align:center;position:fixed;left:20px;top:20px;color:#fff;z-index:3}.portada{text-align:center}.portada .contenedor{position:static}.header{position:static}.menu{background:rgba(255,60,88,.8);position:fixed;top:0;width:100%;left:-100%;z-index:2;bottom:0;right:0;display:flex;align-items:center}.menu ul{flex:1}.menu li{display:block;margin:0;padding:8px 0;border-bottom:1px solid #fff}.menu li:first-child{border-top:1px solid #fff}.menu li:before{display:none}.titulo{font-size:30px}.title-a{font-size:16px}.video-demo{margin:20px 10px}.guitarras img{width:200px}}@media screen and (-webkit-min-device-pixel-ratio: 2 ){.portada{background-image:url(./images/background2x.png)}}
+	</style>
 </head>
 <body>
 	<section id="portadas" class="portada"><!-- portada --> 
@@ -118,11 +119,26 @@
 			</form>
 		</div>
 	</footer>
+	 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
+	<script>
+
+  WebFont.load({
+
+    google: {
+
+      families: ['Montserrat', 'Allerta']
+
+    }
+
+  });
+
+</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"> </script>
-	<script src="js/invie.js">
-		
-	</script>
+	<script src="js/invie.js"></script>
+	<link rel="stylesheet"  href="css/invie.css">
+	<!-- <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> <! las consultas se pueden hacer en otra hoja o misma hoja de estilo --> 
 </body>
 </html>
 <!--atributos de input: text , value(para escribir dentro del type, que luego es seleccionable ), required (para requerir un texto), placeholder (es como un marcador de posición que nos permite escriber algo dentro del type y que es invisible, mas claro y no es seleccionable a diferencia del value).
